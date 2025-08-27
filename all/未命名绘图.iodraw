@@ -7,9 +7,6 @@
         <mxCell id="sSc1cnd7vCm6WPEQ364n-1" value="SysJudgeHandler" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="40" y="400" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sSc1cnd7vCm6WPEQ364n-2" value="GET_POWER_STATUS" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="230" y="400" width="160" height="40" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
