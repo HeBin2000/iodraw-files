@@ -7,9 +7,6 @@
         <mxCell id="sSc1cnd7vCm6WPEQ364n-1" value="SysJudgeHandler" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry y="390" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sSc1cnd7vCm6WPEQ364n-5" value="GET_POWER_STATUS" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="160" y="380" width="160" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="sSc1cnd7vCm6WPEQ364n-6" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
           <mxGeometry x="310" y="250" width="50" height="300" as="geometry" />
         </mxCell>
@@ -23,7 +20,7 @@
           <mxGeometry x="810" y="130" width="50" height="300" as="geometry" />
         </mxCell>
         <mxCell id="sSc1cnd7vCm6WPEQ364n-10" value="case _MODE_STATUS_SEARCH:" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="960" y="200" width="220" height="40" as="geometry" />
+          <mxGeometry x="890" y="120" width="220" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
