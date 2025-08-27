@@ -25,6 +25,12 @@
         <mxCell id="sSc1cnd7vCm6WPEQ364n-11" value="switch(GET_POWER_STATUS())" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="120" y="390" width="210" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="sSc1cnd7vCm6WPEQ364n-12" value="case _MODE_STATUS_DISPLAY_SETTING:" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="860" y="370" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sSc1cnd7vCm6WPEQ364n-13" value="ScalerTimerActiveTimerEvent(SEC(2), _SYSTEM_TIMER_EVENT_JUDGE_NOSUPPORT_STATE);" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="370" width="560" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
