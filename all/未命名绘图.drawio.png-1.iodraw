@@ -58,6 +58,9 @@
         <mxCell id="_EfSKZLco-1DMKKKlq1A-21" value="回调" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1190" y="430" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="_EfSKZLco-1DMKKKlq1A-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="218" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
