@@ -70,6 +70,9 @@
         <mxCell id="_EfSKZLco-1DMKKKlq1A-28" value="每一个偏移就算一个数组" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1000" y="380" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="_EfSKZLco-1DMKKKlq1A-29" value="图层越高，越后执行" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
