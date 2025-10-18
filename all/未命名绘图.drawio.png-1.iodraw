@@ -139,6 +139,21 @@
         <mxCell id="YxT3tMK91IK6btCVTrKI-28" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1235" y="1410" width="70" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="YxT3tMK91IK6btCVTrKI-29" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1210" width="620" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YxT3tMK91IK6btCVTrKI-30" value="32" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1140" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YxT3tMK91IK6btCVTrKI-31" value="32" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1140" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YxT3tMK91IK6btCVTrKI-32" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1140" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YxT3tMK91IK6btCVTrKI-33" value="8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1140" width="70" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
