@@ -39,6 +39,9 @@
         <mxCell id="B_3i06iB96_mYj4PZ0KA-10" value="typedef struct&#xa;{&#xa;    BYTE b4PowerAction : 4;&#xa;    BYTE b4PowerStatus : 4;&#xa;    BYTE b1GDIIsolationFlag : 1;&#xa;    BYTE b1TopIsolationFlag : 1;&#xa;    BYTE b1AnalogIsolationFlag : 1;&#xa;} StructPowerInfoType;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="1032.7777777777774" y="-787.6666666666667" width="215" height="137" as="geometry" />
         </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-11" value="// Power status&#xa;//--------------------------------------------------&#xa;#define GET_POWER_STATUS()                 (g_stPowerInfo.b4PowerStatus)&#xa;#define SET_POWER_STATUS(x)                (g_stPowerInfo.b4PowerStatus = x)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="561.666666666667" y="-769.8888888888889" width="455" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
