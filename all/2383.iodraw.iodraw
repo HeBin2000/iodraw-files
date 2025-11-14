@@ -81,16 +81,14 @@
         <mxCell id="B_3i06iB96_mYj4PZ0KA-24" value="void UserInterfaceTimerEventProc(BYTE ucEventID)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="3556.996666666667" y="-2093.003333333333" width="309" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="B_3i06iB96_mYj4PZ0KA-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="B_3i06iB96_mYj4PZ0KA-27">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="3670" y="-1818.4999999999995" as="sourcePoint" />
-          </mxGeometry>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-26" target="B_3i06iB96_mYj4PZ0KA-27">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-26" value="#define GET_EVENT_VALID(x)                      (g_stTimerEvent[x].b1EventValid)&#xa;#define SET_EVENT_VALID(x)                      (g_stTimerEvent[x].b1EventValid = _TRUE)&#xa;#define CLR_EVENT_VALID(x)                      (g_stTimerEvent[x].b1EventValid = _FALSE)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="3011" y="-1913" width="499" height="65" as="geometry" />
+          <mxGeometry x="3988" y="-1526" width="499" height="65" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-27" value="typedef struct&#xa;{&#xa;    BYTE b1EventValid : 1;&#xa;    BYTE b7EventID : 7;&#xa;    WORD usTime;&#xa;} StructTimerEventTableType;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="3871.9964705882353" y="-1879.0041176470588" width="186" height="108" as="geometry" />
+          <mxGeometry x="4688.996470588236" y="-1554.0041176470588" width="186" height="108" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
