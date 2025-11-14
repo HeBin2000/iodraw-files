@@ -1,11 +1,14 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="957" dy="482" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1969" dy="993" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="B_3i06iB96_mYj4PZ0KA-1" value="void main(void)&#xa;{&#xa;    do&#xa;    {&#xa;        SysMainSystemInitial();&#xa;       &#xa;        while(SysMainSytemPowerDetect() == _TRUE)&#xa;        {    &#xa;            UserKeyHandler();            &#xa;            SysPowerHandler();&#xa;            SysJudgeHandler();&#xa;&#xa;&#xa;#if(_AUDIO_SUPPORT == _ON)&#xa;            SysAudioHandler();&#xa;#endif&#xa;            SysTimerHandler();      &#xa;            SysSourceHandler();&#xa;            SysModeHandler();&#xa;&#xa;&#xa;#if(_MHL_SUPPORT == _ON)&#xa;            SysMHLMscHandler();&#xa;#endif&#xa;&#xa;&#xa;#if(_LC_TANK_SUPPORT == _ON)&#xa;            SysLCTankHandler();&#xa;#endif&#xa;            UserOsdHandler();&#xa;            UserCommonDdcciHandler();&#xa;            ScalerDebug();                        &#xa;        }&#xa;    }&#xa;    while(_TRUE);        &#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="152.999951171875" y="148.9999755859375" width="307" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-2" value="typedef enum&#xa;{&#xa;    _MODE_STATUS_INITIAL = 0x00,            &#xa;    _MODE_STATUS_SEARCH,             &#xa;    _MODE_STATUS_DISPLAY_SETTING,    &#xa;    _MODE_STATUS_ACTIVE,             &#xa;    _MODE_STATUS_NOSUPPORT,          &#xa;    _MODE_STATUS_NOSIGNAL,           &#xa;    _MODE_STATUS_POWER_SAVING,       &#xa;    _MODE_STATUS_POWER_OFF,          &#xa;    _MODE_STATUS_FACTORY,  &#xa;    _MODE_STATUS_NONE = 0xFF,&#xa;} EnumModeStatus;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="848.3529411764707" y="325.52941176470586" width="268" height="209" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
