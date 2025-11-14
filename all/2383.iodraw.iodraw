@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="9970" dy="5420" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8770" dy="7020" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,22 +37,22 @@
           <mxGeometry x="488" y="-149" width="134" height="36" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-10" value="typedef struct&#xa;{&#xa;    BYTE b4PowerAction : 4;&#xa;    BYTE b4PowerStatus : 4;&#xa;    BYTE b1GDIIsolationFlag : 1;&#xa;    BYTE b1TopIsolationFlag : 1;&#xa;    BYTE b1AnalogIsolationFlag : 1;&#xa;} StructPowerInfoType;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1032.7777777777774" y="-787.6666666666667" width="215" height="137" as="geometry" />
+          <mxGeometry x="2442.7777777777774" y="-2232.666666666667" width="215" height="137" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-11" target="B_3i06iB96_mYj4PZ0KA-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-11" value="// Power status&#xa;//--------------------------------------------------&#xa;#define GET_POWER_STATUS()                 (g_stPowerInfo.b4PowerStatus)&#xa;#define SET_POWER_STATUS(x)                (g_stPowerInfo.b4PowerStatus = x)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="283.99666666666695" y="-769.8888888888889" width="455" height="80" as="geometry" />
+          <mxGeometry x="1693.996666666667" y="-2214.8888888888887" width="455" height="80" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-13" target="B_3i06iB96_mYj4PZ0KA-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-13" value="//--------------------------------------------------&#xa;// Description  : Detect for PCB 5V &amp; turn off PC99 LDO&#xa;// Input Value  : None&#xa;// Output Value : _TRUE&#xa;//--------------------------------------------------&#xa;bit ScalerLDOPC99PowerDetect(BYTE ucPowerStatus)&#xa;{&#xa;    if(ucPowerStatus == _POWER_STATUS_AC_ON)&#xa;    {&#xa;&#xa;&#xa;#if 0//(_D1_INPUT_PORT_TYPE == _D1_HDMI_PORT)&#xa;        if(PCB_POWER_5V_LEVEL() &lt; PCB_POWER_5V_THRESHOLD)&#xa;        {&#xa;            // Toggle HDMI HPD for EDID compatibility under PC99 mode&#xa;            PCB_D1_HOTPLUG(_D1_HOT_PLUG_LOW);&#xa;            ScalerTimerDelayXms(GET_HDMI_HOTPLUG_TIME());&#xa;            PCB_D1_HOTPLUG(_D1_HOT_PLUG_HIGH);&#xa;        }&#xa;#endif&#xa;&#xa;&#xa;//========kernel update by henry ============================  &#xa;       //  while(PCB_POWER_5V_LEVEL() &lt; PCB_POWER_5V_THRESHOLD)&#xa;       //   {&#xa;       //    ScalerDebug();&#xa;       //   }&#xa;//========kernel update by henry ============================  &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;        // Turn off PC99 LDO&#xa;        ScalerSetBit(P2B_A4_PC99_CTRL5, ~(_BIT1 | _BIT0), _BIT1);&#xa;    }&#xa;&#xa;&#xa;    return _TRUE;&#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-288.0011111111113" y="-972.0040740740742" width="442" height="612" as="geometry" />
+          <mxGeometry x="1121.9988888888888" y="-2417.004074074074" width="442" height="612" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-14" value="#define PCB_POWER_5V_DETECT()                   (ScalerLDOPC99PowerDetect(GET_POWER_STATUS()))" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-1106.0042857142855" y="-737.9971428571426" width="550" height="51" as="geometry" />
+          <mxGeometry x="303.9957142857145" y="-2182.9971428571425" width="550" height="51" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.009;entryY=0.411;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-14" target="B_3i06iB96_mYj4PZ0KA-13">
           <mxGeometry relative="1" as="geometry" />
@@ -61,7 +61,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-17" value="SysMainSytemPowerDetect" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-1560.0042857142857" y="-737.1671428571426" width="177" height="36" as="geometry" />
+          <mxGeometry x="-150.00428571428574" y="-2182.1671428571426" width="177" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-20" value="typedef struct&#xa;{&#xa;    BYTE b1OsdLogo : 1;&#xa;    ////BYTE b1OsdWakeUpSwitchDdcciPort : 1;&#xa;    BYTE b1OsdWakeUpShowSource : 1;&#xa;    BYTE b1OsdDoAspectRatio : 1;&#xa;    BYTE b2OsdColorFormat : 2;&#xa;    BYTE b3OsdsixColor : 3;&#xa;        &#xa;    BYTE ucOsdState;&#xa;    BYTE ucOsdEventMsg;&#xa;    BYTE ucOsdKeyMessage;&#xa;    BYTE ucOsdHoldKeyMessage;&#xa;    BYTE ucOsdKeyControl;&#xa;    BYTE ucOsdSixColorHue;&#xa;    BYTE ucOsdSixColorSaturation;&#xa;    BYTE ucOsd3DEffectRealValue;&#xa;&#xa;&#xa;    BYTE b3OsdHotkeyStatus : 3;&#xa;    BYTE b1OsdFactoryModeStatus : 1;&#xa;    BYTE b1OsdFactoryMsgStatus : 1;&#xa;    BYTE b1OsdFactoryMsgHitFlag : 1;&#xa;    BYTE b1OsdFactoryMsgYReverseFlag : 1;&#xa;    BYTE b1OsdFactoryMsgXReverseFlag : 1;&#xa;&#xa;&#xa;#if(_ENERGY_STAR_SUPPORT == _ON)&#xa;    BYTE b1OsdModeResetFlag : 1;&#xa;#endif&#xa;    BYTE b1OsdUserResetFlag1 : 1;&#xa;    BYTE b1OsdUserResetFlag2 : 1;&#xa;    BYTE b1OsdAutoAlignFlag : 1;&#xa;    BYTE b1OsdAcFlag : 1;//20140311_AC_DC_LOGO&#xa;    BYTE b1DCRFirstOnFlag:1;&#xa;&#xa;&#xa;}StructOsdInfo;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="-1140" width="317" height="569" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
