@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="2493" dy="1855" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3591" dy="2406" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,7 +46,10 @@
           <mxGeometry x="283.99666666666695" y="-769.8888888888889" width="455" height="80" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-13" value="//--------------------------------------------------&#xa;// Description  : Detect for PCB 5V &amp; turn off PC99 LDO&#xa;// Input Value  : None&#xa;// Output Value : _TRUE&#xa;//--------------------------------------------------&#xa;bit ScalerLDOPC99PowerDetect(BYTE ucPowerStatus)&#xa;{&#xa;    if(ucPowerStatus == _POWER_STATUS_AC_ON)&#xa;    {&#xa;&#xa;&#xa;#if 0//(_D1_INPUT_PORT_TYPE == _D1_HDMI_PORT)&#xa;        if(PCB_POWER_5V_LEVEL() &lt; PCB_POWER_5V_THRESHOLD)&#xa;        {&#xa;            // Toggle HDMI HPD for EDID compatibility under PC99 mode&#xa;            PCB_D1_HOTPLUG(_D1_HOT_PLUG_LOW);&#xa;            ScalerTimerDelayXms(GET_HDMI_HOTPLUG_TIME());&#xa;            PCB_D1_HOTPLUG(_D1_HOT_PLUG_HIGH);&#xa;        }&#xa;#endif&#xa;&#xa;&#xa;//========kernel update by henry ============================  &#xa;       //  while(PCB_POWER_5V_LEVEL() &lt; PCB_POWER_5V_THRESHOLD)&#xa;       //   {&#xa;       //    ScalerDebug();&#xa;       //   }&#xa;//========kernel update by henry ============================  &#xa;&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;        // Turn off PC99 LDO&#xa;        ScalerSetBit(P2B_A4_PC99_CTRL5, ~(_BIT1 | _BIT0), _BIT1);&#xa;    }&#xa;&#xa;&#xa;    return _TRUE;&#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-176.1111111111113" y="-764.0740740740741" width="442" height="612" as="geometry" />
+          <mxGeometry x="-258.0011111111113" y="-959.0040740740742" width="442" height="612" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-14" value="#define PCB_POWER_5V_DETECT()                   (ScalerLDOPC99PowerDetect(GET_POWER_STATUS()))" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1106.0042857142855" y="-737.9971428571426" width="550" height="51" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
