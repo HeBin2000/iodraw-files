@@ -1,0 +1,16 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="GtYraPcZufBLDo_DUvTT">
+    <mxGraphModel dx="1235" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4Dycx2UhGkGiT0q9cVWc-1" value="_MENU_FUN_ECO_STANDARD,    &#xa;    _MENU_FUN_ECO_E_SPORT,&#xa;    _MENU_FUN_ECO_FPS,&#xa;    _MENU_FUN_ECO_RTS,&#xa;    _MENU_FUN_ECO_MAC,&#xa;    _MENU_FUN_ECO_LOWBLUE,&#xa;    _MENU_FUN_ECO_PLAYER1,&#xa;    _MENU_FUN_ECO_PLAYER2," style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="230" y="320" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4Dycx2UhGkGiT0q9cVWc-2" value="_COLOREFFECT_STANDARD,&#xa;    _COLOREFFECT_MOVIE,    &#xa;    _COLOREFFECT_READ,&#xa;    _COLOREFFECT_NIGHT,&#xa;    _COLOREFFECT_EYES,&#xa;    _COLOREFFECT_RTS,&#xa;    _COLOREFFECT_FPS,&#xa;    _COLOREFFECT_MOBA,&#xa;    _COLOREFFECT_GAME,  //ddc&#xa;    _COLOREFFECT_VIVID, //ddc&#xa;    _COLOREFFECT_USER, &#xa;    _COLOREFFECT_PHOTO,&#xa;    _COLOREFFECT_AMOUNT = _COLOREFFECT_MOBA," style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="500" y="400" width="360" height="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
