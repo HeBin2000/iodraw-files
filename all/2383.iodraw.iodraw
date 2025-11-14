@@ -22,6 +22,9 @@
         <mxCell id="B_3i06iB96_mYj4PZ0KA-6" value="typedef enum&#xa;{&#xa;    _POWER_STATUS_AC_ON = 0x00,&#xa;    _POWER_STATUS_OFF,&#xa;    _POWER_STATUS_NORMAL,&#xa;    _POWER_STATUS_SAVING,&#xa;    _POWER_STATUS_NOSUPPORT_SAVING,&#xa;    _POWER_STATUS_NONE = 0xFF,&#xa;} EnumPowerStatus;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="883" y="96" width="283" height="152" as="geometry" />
         </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-7" value="SysJudgeHandler();" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="717" y="166" width="134" height="36" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
