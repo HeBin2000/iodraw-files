@@ -1,10 +1,13 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="2074" dy="844" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2791" dy="1606" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="B_3i06iB96_mYj4PZ0KA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-1" target="B_3i06iB96_mYj4PZ0KA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-1" target="B_3i06iB96_mYj4PZ0KA-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-1" value="void main(void)&#xa;{&#xa;    do&#xa;    {&#xa;        SysMainSystemInitial();&#xa;       &#xa;        while(SysMainSytemPowerDetect() == _TRUE)&#xa;        {    &#xa;            UserKeyHandler();            &#xa;            SysPowerHandler();&#xa;            SysJudgeHandler();&#xa;&#xa;&#xa;#if(_AUDIO_SUPPORT == _ON)&#xa;            SysAudioHandler();&#xa;#endif&#xa;            SysTimerHandler();      &#xa;            SysSourceHandler();&#xa;            SysModeHandler();&#xa;&#xa;&#xa;#if(_MHL_SUPPORT == _ON)&#xa;            SysMHLMscHandler();&#xa;#endif&#xa;&#xa;&#xa;#if(_LC_TANK_SUPPORT == _ON)&#xa;            SysLCTankHandler();&#xa;#endif&#xa;            UserOsdHandler();&#xa;            UserCommonDdcciHandler();&#xa;            ScalerDebug();                        &#xa;        }&#xa;    }&#xa;    while(_TRUE);        &#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
@@ -20,13 +23,13 @@
           <mxGeometry x="622.0035294117648" y="401.00470588235294" width="164" height="36" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-6" value="typedef enum&#xa;{&#xa;    _POWER_STATUS_AC_ON = 0x00,&#xa;    _POWER_STATUS_OFF,&#xa;    _POWER_STATUS_NORMAL,&#xa;    _POWER_STATUS_SAVING,&#xa;    _POWER_STATUS_NOSUPPORT_SAVING,&#xa;    _POWER_STATUS_NONE = 0xFF,&#xa;} EnumPowerStatus;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="883" y="96" width="283" height="152" as="geometry" />
+          <mxGeometry x="742" y="-207" width="283" height="152" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-7" target="B_3i06iB96_mYj4PZ0KA-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-7" value="SysJudgeHandler();" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="629" y="154" width="134" height="36" as="geometry" />
+          <mxGeometry x="488" y="-149" width="134" height="36" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
