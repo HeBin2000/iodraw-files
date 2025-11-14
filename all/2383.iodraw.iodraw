@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="2195" dy="3503" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2562" dy="3688" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -92,6 +92,9 @@
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-27" value="typedef struct&#xa;{&#xa;    BYTE b1EventValid : 1;&#xa;    BYTE b7EventID : 7;&#xa;    WORD usTime;&#xa;} StructTimerEventTableType;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="4688.996470588236" y="-1554.0041176470588" width="186" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-30" value="typedef enum&#xa;{&#xa;    _SYSTEM_TIMER_EVENT_START = _USER_TIMER_EVENT_COUNT,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_CLEAR_DETECTING = _SYSTEM_TIMER_EVENT_START,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_HP_CANCEL_MANUAL_SWITCH_PORT,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_ASUS_START_AUTO,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_ACTIVE_STATE,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_NOSUPPORT_STATE,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_NOSIGNAL_STATE,    &#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_VCM_INITIAL,&#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_VCM_CHARGE,&#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_DEPOP_TO_NORMAL,    &#xa;    _SYSTEM_TIMER_EVENT_END,&#xa;    _SYSTEM_TIMER_EVENT_COUNT,&#xa;} EnumSystemTimerEventID;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="4899.999473684211" y="-2171.9968421052636" width="550" height="252" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
