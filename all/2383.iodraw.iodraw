@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-1" target="B_3i06iB96_mYj4PZ0KA-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-1" value="void main(void)&#xa;{&#xa;    do&#xa;    {&#xa;        SysMainSystemInitial();&#xa;       &#xa;        while(SysMainSytemPowerDetect() == _TRUE)&#xa;        {    &#xa;            UserKeyHandler();            &#xa;            SysPowerHandler();&#xa;            SysJudgeHandler();&#xa;&#xa;&#xa;#if(_AUDIO_SUPPORT == _ON)&#xa;            SysAudioHandler();&#xa;#endif&#xa;            SysTimerHandler();      &#xa;            SysSourceHandler();&#xa;            SysModeHandler();&#xa;&#xa;&#xa;#if(_MHL_SUPPORT == _ON)&#xa;            SysMHLMscHandler();&#xa;#endif&#xa;&#xa;&#xa;#if(_LC_TANK_SUPPORT == _ON)&#xa;            SysLCTankHandler();&#xa;#endif&#xa;            UserOsdHandler();&#xa;            UserCommonDdcciHandler();&#xa;            ScalerDebug();                        &#xa;        }&#xa;    }&#xa;    while(_TRUE);        &#xa;}" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="152.999951171875" y="148.9999755859375" width="307" height="540" as="geometry" />
         </mxCell>
