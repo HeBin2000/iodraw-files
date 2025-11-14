@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="2791" dy="1606" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1516" dy="963" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,13 +19,13 @@
           <mxGeometry x="-171.000048828125" y="46.999975585937506" width="307" height="540" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-2" value="typedef enum&#xa;{&#xa;    _MODE_STATUS_INITIAL = 0x00,            &#xa;    _MODE_STATUS_SEARCH,             &#xa;    _MODE_STATUS_DISPLAY_SETTING,    &#xa;    _MODE_STATUS_ACTIVE,             &#xa;    _MODE_STATUS_NOSUPPORT,          &#xa;    _MODE_STATUS_NOSIGNAL,           &#xa;    _MODE_STATUS_POWER_SAVING,       &#xa;    _MODE_STATUS_POWER_OFF,          &#xa;    _MODE_STATUS_FACTORY,  &#xa;    _MODE_STATUS_NONE = 0xFF,&#xa;} EnumModeStatus;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1092.0029411764708" y="711.9994117647059" width="268" height="209" as="geometry" />
+          <mxGeometry x="1116.0029411764708" y="707.9994117647059" width="268" height="209" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-3" target="B_3i06iB96_mYj4PZ0KA-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-3" value="RTDOsdSystemFlowProc" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="785.0035294117648" y="794.0047058823529" width="164" height="36" as="geometry" />
+          <mxGeometry x="809.0035294117648" y="790.0047058823529" width="164" height="36" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-6" value="typedef enum&#xa;{&#xa;    _POWER_STATUS_AC_ON = 0x00,&#xa;    _POWER_STATUS_OFF,&#xa;    _POWER_STATUS_NORMAL,&#xa;    _POWER_STATUS_SAVING,&#xa;    _POWER_STATUS_NOSUPPORT_SAVING,&#xa;    _POWER_STATUS_NONE = 0xFF,&#xa;} EnumPowerStatus;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="742" y="-207" width="283" height="152" as="geometry" />
