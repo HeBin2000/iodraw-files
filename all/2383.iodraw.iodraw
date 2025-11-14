@@ -99,6 +99,9 @@
         <mxCell id="B_3i06iB96_mYj4PZ0KA-30" value="typedef enum&#xa;{&#xa;    _SYSTEM_TIMER_EVENT_START = _USER_TIMER_EVENT_COUNT,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_CLEAR_DETECTING = _SYSTEM_TIMER_EVENT_START,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_HP_CANCEL_MANUAL_SWITCH_PORT,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_ASUS_START_AUTO,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_ACTIVE_STATE,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_NOSUPPORT_STATE,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_NOSIGNAL_STATE,    &#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_VCM_INITIAL,&#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_VCM_CHARGE,&#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_DEPOP_TO_NORMAL,    &#xa;    _SYSTEM_TIMER_EVENT_END,&#xa;    _SYSTEM_TIMER_EVENT_COUNT,&#xa;} EnumSystemTimerEventID;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="4985.999473684211" y="-2206.9968421052636" width="550" height="252" as="geometry" />
         </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-32" value="void SysTimerEventProc(EnumSystemTimerEventID enumEventID)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="5161.90909090909" y="-2441.818181818182" width="387" height="36" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
