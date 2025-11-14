@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="2562" dy="3688" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3844" dy="4335" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -75,6 +75,9 @@
         <mxCell id="B_3i06iB96_mYj4PZ0KA-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-23" target="B_3i06iB96_mYj4PZ0KA-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-23" target="B_3i06iB96_mYj4PZ0KA-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-23" value="//--------------------------------------------------&#xa;// User timer event&#xa;//--------------------------------------------------&#xa;typedef enum&#xa;{&#xa;    _USER_TIMER_EVENT_START,&#xa;    _USER_TIMER_EVENT_KEY_REPEAT_ENABLE = _USER_TIMER_EVENT_START,&#xa;    _USER_TIMER_EVENT_KEY_SCAN_READY,&#xa;#if(_LONG_PRESS_MENU_FACTORY_MODE==_ON)&#xa;    _USER_TIMER_EVENT_MENUKEY1_SCAN_DUAL,&#xa; #endif&#xa;    &#xa;    _USER_TIMER_EVENT_OSD_DISABLE_OSD_LOGO,&#xa;    _USER_TIMER_EVENT_OSD_SHOW_NO_CABLE,&#xa;    _USER_TIMER_EVENT_OSD_SHOW_NO_SIGNAL,&#xa;    _USER_TIMER_EVENT_OSD_SHOW_POWER_SAVING,&#xa;    _USER_TIMER_EVENT_GO_TO_POWER_SAVING,&#xa;    _USER_TIMER_EVENT_OSD_DISABLE,&#xa;    _USER_TIMER_EVENT_PANEL_BACKLIGHT_ON,&#xa;    _USER_TIMER_EVENT_PANEL_POWER_OFF,&#xa;    ////_USER_TIMER_EVENT_DO_AUTO_COLOR,&#xa;    _USER_TIMER_EVENT_PANEL_USED_TIMER,&#xa;    _USER_TIMER_EVENT_HLWIN_TYPE5_MOVE,    &#xa;&#xa;&#xa;    _USER_TIMER_EVENT_AUTO_POWERDOWN,    &#xa;    _USER_TIMER_EVENT_ENTER_FACTORY,&#xa;    _USER_TIMER_EVENT_SHOW_BURNIN,&#xa;    _USER_TIMER_EVENT_SHOW_SOURCE_SELECT,&#xa;    &#xa;#if(_ENERGY_STAR_SUPPORT == _ON)&#xa;    _USER_TIMER_EVENT_ES_ADJUST,&#xa;#endif&#xa;    _USER_TIMER_EVENT_LED_FLASH,&#xa;    _USER_TIMER_EVENT_EDID_INITIAL,&#xa;&#xa;&#xa;&#xa;&#xa;     _USER_TIMER_EVENT_SAVE_EEPROM_OSDUSERDATA,&#xa;    _USER_TIMER_EVENT_SAVE_EEPROM_BRICON,//20&#xa;    _USER_TIMER_EVENT_SAVE_EEPROM_MODEUSERDATA,&#xa;    _USER_TIMER_EVENT_BURN_IN_DDCTOOL,&#xa;    _USER_TIMER_EVENT_END,&#xa;    _USER_TIMER_EVENT_COUNT = _USER_TIMER_EVENT_END,&#xa;} EnumUserTimerEventID;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="4228.996666666668" y="-2417" width="502" height="684" as="geometry" />
         </mxCell>
@@ -94,7 +97,7 @@
           <mxGeometry x="4688.996470588236" y="-1554.0041176470588" width="186" height="108" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-30" value="typedef enum&#xa;{&#xa;    _SYSTEM_TIMER_EVENT_START = _USER_TIMER_EVENT_COUNT,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_CLEAR_DETECTING = _SYSTEM_TIMER_EVENT_START,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_HP_CANCEL_MANUAL_SWITCH_PORT,&#xa;    _SYSTEM_TIMER_EVENT_SOURCE_ASUS_START_AUTO,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_ACTIVE_STATE,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_NOSUPPORT_STATE,&#xa;    _SYSTEM_TIMER_EVENT_JUDGE_NOSIGNAL_STATE,    &#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_VCM_INITIAL,&#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_VCM_CHARGE,&#xa;    _SYSTEM_TIMER_EVENT_AUDIO_DAC_WAIT_DEPOP_TO_NORMAL,    &#xa;    _SYSTEM_TIMER_EVENT_END,&#xa;    _SYSTEM_TIMER_EVENT_COUNT,&#xa;} EnumSystemTimerEventID;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="5183.999473684211" y="-2173.9968421052636" width="550" height="252" as="geometry" />
+          <mxGeometry x="4985.999473684211" y="-2206.9968421052636" width="550" height="252" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
