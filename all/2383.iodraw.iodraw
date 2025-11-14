@@ -57,8 +57,16 @@
         <mxCell id="B_3i06iB96_mYj4PZ0KA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.009;entryY=0.411;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-14" target="B_3i06iB96_mYj4PZ0KA-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-17" target="B_3i06iB96_mYj4PZ0KA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1376.7142857142853" y="-676" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-17" value="SysMainSytemPowerDetect" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-1411.7142857142858" y="-713.8571428571427" width="177" height="36" as="geometry" />
+          <mxGeometry x="-1452.0042857142857" y="-747.8871428571426" width="177" height="36" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
