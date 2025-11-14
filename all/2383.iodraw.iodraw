@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="3590" dy="4207" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2769" dy="3793" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -80,6 +80,12 @@
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-24" value="void UserInterfaceTimerEventProc(BYTE ucEventID)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="3556.996666666667" y="-2093.003333333333" width="309" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-26" value="#define GET_EVENT_VALID(x)                      (g_stTimerEvent[x].b1EventValid)&#xa;#define SET_EVENT_VALID(x)                      (g_stTimerEvent[x].b1EventValid = _TRUE)&#xa;#define CLR_EVENT_VALID(x)                      (g_stTimerEvent[x].b1EventValid = _FALSE)" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="3036.998888888889" y="-1923.9966666666667" width="504" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-27" value="typedef struct&#xa;{&#xa;    BYTE b1EventValid : 1;&#xa;    BYTE b7EventID : 7;&#xa;    WORD usTime;&#xa;} StructTimerEventTableType;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="3747.176470588235" y="-1893.2941176470588" width="186" height="108" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
