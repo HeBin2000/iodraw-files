@@ -5,7 +5,12 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="B_3i06iB96_mYj4PZ0KA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-1" target="B_3i06iB96_mYj4PZ0KA-3">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="388" y="452" />
+              <mxPoint x="388" y="812" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-1" target="B_3i06iB96_mYj4PZ0KA-7">
           <mxGeometry relative="1" as="geometry" />
@@ -14,13 +19,13 @@
           <mxGeometry x="-171.000048828125" y="46.999975585937506" width="307" height="540" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-2" value="typedef enum&#xa;{&#xa;    _MODE_STATUS_INITIAL = 0x00,            &#xa;    _MODE_STATUS_SEARCH,             &#xa;    _MODE_STATUS_DISPLAY_SETTING,    &#xa;    _MODE_STATUS_ACTIVE,             &#xa;    _MODE_STATUS_NOSUPPORT,          &#xa;    _MODE_STATUS_NOSIGNAL,           &#xa;    _MODE_STATUS_POWER_SAVING,       &#xa;    _MODE_STATUS_POWER_OFF,          &#xa;    _MODE_STATUS_FACTORY,  &#xa;    _MODE_STATUS_NONE = 0xFF,&#xa;} EnumModeStatus;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="929.0029411764707" y="318.9994117647059" width="268" height="209" as="geometry" />
+          <mxGeometry x="1092.0029411764708" y="711.9994117647059" width="268" height="209" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="B_3i06iB96_mYj4PZ0KA-3" target="B_3i06iB96_mYj4PZ0KA-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-3" value="RTDOsdSystemFlowProc" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="622.0035294117648" y="401.00470588235294" width="164" height="36" as="geometry" />
+          <mxGeometry x="785.0035294117648" y="794.0047058823529" width="164" height="36" as="geometry" />
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-6" value="typedef enum&#xa;{&#xa;    _POWER_STATUS_AC_ON = 0x00,&#xa;    _POWER_STATUS_OFF,&#xa;    _POWER_STATUS_NORMAL,&#xa;    _POWER_STATUS_SAVING,&#xa;    _POWER_STATUS_NOSUPPORT_SAVING,&#xa;    _POWER_STATUS_NONE = 0xFF,&#xa;} EnumPowerStatus;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="742" y="-207" width="283" height="152" as="geometry" />
