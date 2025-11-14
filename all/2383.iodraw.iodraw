@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.5.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jPpT7EG-Pb0Q0Qc6hr-f">
-    <mxGraphModel dx="1516" dy="963" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4120" dy="2676" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -35,6 +35,9 @@
         </mxCell>
         <mxCell id="B_3i06iB96_mYj4PZ0KA-7" value="SysJudgeHandler();" style="text;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="488" y="-149" width="134" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="B_3i06iB96_mYj4PZ0KA-10" value="typedef struct&#xa;{&#xa;    BYTE b4PowerAction : 4;&#xa;    BYTE b4PowerStatus : 4;&#xa;    BYTE b1GDIIsolationFlag : 1;&#xa;    BYTE b1TopIsolationFlag : 1;&#xa;    BYTE b1AnalogIsolationFlag : 1;&#xa;} StructPowerInfoType;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1032.7777777777774" y="-787.6666666666667" width="215" height="137" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
